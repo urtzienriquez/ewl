@@ -5,5 +5,5 @@ R code to compute evaporative water loss and skin resistance of frogs or salaman
 
 These parameters are required:
 
-*par1
-*par2
+Markup : 1. par1
+         2. par2
