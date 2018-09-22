@@ -20,11 +20,11 @@ These parameters are required:
 
 **8. RH<sub>m</sub>:** relative humidity in agar model chamber (expressed as decimal fraction)
 
-**9. T<sub>i</sub>:** temperature at the empty chamber
+**9. T<sub>i</sub>:** temperature in empty chamber
 
-**10. T<sub>e</sub>:** temperature at the animal chamber
+**10. T<sub>e</sub>:** temperature in animal chamber
 
-**11. T<sub>m</sub>:** temperature at eh agar model chamber
+**11. T<sub>m</sub>:** temperature in agar model chamber
 
 **12. T<sub>skin</sub>:** animal's skin temperature
 
