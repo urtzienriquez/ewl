@@ -1,4 +1,5 @@
 # parameters
+# mass:
 
 auto_ewl <- function(mass, mass_m, 
                      Vi, Ve, Ve_m,
