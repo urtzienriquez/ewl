@@ -1,7 +1,7 @@
 #just load:
 source('./auto_ewl.R')
 
-# enter the needed parameters (see explanation above)
+# enter the needed parameters
 mass <- 56 # in grams
 mass_m <- 56 # in grams
 Vi <- 1.04 # air flow in the blank chamber
