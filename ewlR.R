@@ -2,9 +2,9 @@
 # mass:
 
 ewlR <- function(mass, mass_m, 
-                     Vi, Ve, Ve_m,
-                     RHi, RHe, RHe_m,
-                     Ti, Te, Te_m, Tskin, Tskin_m,
+                     Vi, Ve, Vm,
+                     RHi, RHe, RHm,
+                     Ti, Te, Tm, Tskin, Tskin_m,
                      morpho=c('frog','salam')){
   
   # compute vapor density values from temperature using an equation:
@@ -15,17 +15,17 @@ ewlR <- function(mass, mass_m,
   
   VDi <- vapor_dens(Ti)
   VDe <- vapor_dens(Te)
-  VDe_m <- vapor_dens(Te_m)
+  VDe_m <- vapor_dens(Tm)
   VDs <- vapor_dens(Tskin)
   VDs_m <- vapor_dens(Tskin_m)
   
   # total evaporative water loss (EWL)
   OMEGAe <- VDe * RHe # water vapor density in the animal chamber
   OMEGAi <- VDi * RHi # water vapor density in the blank chamber
-  OMEGAe_m <- VDe_m * RHe_m # water vapor density in the agar model chamber
+  OMEGAe_m <- VDe_m * RHm # water vapor density in the agar model chamber
   
   EWL <- Ve * OMEGAe - Vi * OMEGAi # evaporative water loss for the amph (mg min-1)
-  EWL_m <- Ve_m * OMEGAe_m - Vi * OMEGAi # evaporative water loss for the agar model
+  EWL_m <- Vm * OMEGAe_m - Vi * OMEGAi # evaporative water loss for the agar model
   
   
   
