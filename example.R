@@ -1,5 +1,5 @@
 #just load the function:
-source('./auto_ewl.R')
+source('./ewlR.R')
 
 # enter the needed parameters
 mass <- 56 # in grams
@@ -27,11 +27,11 @@ Tskin_m <- 19.3
 
 # and run!
 # you have to choose a shape for the animal (frog or salamander) to compute the surface area
-auto_ewl(mass, mass_m, Vi, Ve, Ve_m, RHi, RHe, RHe_m, 
-         Ti, Te, Te_m, Tskin, Tskin_m, morpho = "frog")
+ewlR(mass, mass_m, Vi, Ve, Ve_m, RHi, RHe, RHe_m, 
+     Ti, Te, Te_m, Tskin, Tskin_m, morpho = "frog")
 
-auto_ewl(mass, mass_m, Vi, Ve, Ve_m, RHi, RHe, RHe_m, 
-         Ti, Te, Te_m, Tskin, Tskin_m, morpho = "salam")
+ewlR(mass, mass_m, Vi, Ve, Ve_m, RHi, RHe, RHe_m, 
+     Ti, Te, Te_m, Tskin, Tskin_m, morpho = "salam")
 
 # in this case animals and agar models behave exactly the same (see parameters).
 # that's why R=0. Hopefully, with real data we will have better resuts! :)
