@@ -1,7 +1,7 @@
 # parameters
 # mass:
 
-auto_ewl <- function(mass, mass_m, 
+ewlR <- function(mass, mass_m, 
                      Vi, Ve, Ve_m,
                      RHi, RHe, RHe_m,
                      Ti, Te, Te_m, Tskin, Tskin_m,
