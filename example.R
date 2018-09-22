@@ -1,4 +1,4 @@
-#just load:
+#just load the function:
 source('./auto_ewl.R')
 
 # enter the needed parameters
