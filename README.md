@@ -14,11 +14,20 @@ These parameters are required:
 
 **5. V<sub>m</sub>:** air flow in the agar model chamber
 
-RHi <- 0.036# relative humidity in blank chamber (expressed as a decimal fraction)
-RHe <- 0.35 # relative humidity in animal chamber (expressed as a decimal fraction; e.g. 0.50 for a RH of 50%)
-RHe_m <- 0.35 # relative humidity in agar model chamber (expressed as a decimal fraction; e.g. 0.50 for a RH of 50%)
-#VDi <- 20.23 # Saturation vapor density in blank chamber (extracted from Smithsonian Table 108)
-#VDe <- 20.58 # Saturation vapor density in animal chamber (extracted from Smithsonian Table 108)
-#VDe_m <- 20.58 # Saturation vapor density in agar model chamber (extracted from Smithsonian Table 108)
-#VDs <- 16.6
-#VDs_m <- 16.6
+**6. RH<sub>i</sub>:** relative humidity in empty chamber (expressed as decimal fraction; e.g. 0.50 for a RH of 50%)
+
+**7. RH<sub>e</sub>:** relative humidity in animal chamber (expressed as decimal fraction)
+
+**8. RH<sub>m</sub>:** relative humidity in agar model chamber (expressed as decimal fraction)
+
+**9. T<sub>i</sub>:** temperature at the empty chamber
+
+**10. T<sub>e</sub>:** temperature at the animal chamber
+
+**11. T<sub>m</sub>:** temperature at eh agar model chamber
+
+**12. T<sub>skin</sub>:** animal's skin temperature
+
+**13. T<sub>skin_m</sub>:** agar model's 'skin' (surface) temperature
+
+
