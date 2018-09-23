@@ -31,6 +31,12 @@ These parameters are required:
 **13. T<sub>skin_m</sub>:** agar model's 'skin' (surface) temperature
 
 
+## Estimating saturation vapor density
+
+I have implemented the following equation to calculate saturation vapor density at different temperatures:
+
+VD = 5.018 + 0.32321 * Tc + 8.1847 * 10^-3 * Tc^2 + 3.1243 * 10^-4 * Tc^3
+
 ![VD](/images/VD_plot.png)
 Format: ![Alt Text](url)
 
