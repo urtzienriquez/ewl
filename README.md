@@ -31,6 +31,11 @@ These parameters are required:
 **13. T<sub>skin_m</sub>:** agar model's 'skin' (surface) temperature
 
 
-```{r}
-VD <- 5.018 + .32321*Tc + 8.1847 * 10^-3 * Tc^2 + 3.1243 * 10^-4 * Tc^3
+```{r, echo=F}
+VD <- function(Tc){
+  5.018 + .32321*Tc + 8.1847 * 10^-3 * Tc^2 + 3.1243 * 10^-4 * Tc^3
+}
+Ts <- seq(10,36,1)
+
+plot(VD, from=10, to=33)
 ```
