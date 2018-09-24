@@ -68,9 +68,9 @@ I have implemented the following equation to calculate saturation vapor density 
 *VD* = 5.018 + 0.32321 &times; *T<sub>c</sub>* + 8.1847 &times; 10<sup>-3</sup> &times; *T<sub>c</sub>*<sup>2</sup> + 3.1243 &times; 10<sup>-4</sup> &times; *T<sub>c</sub>*<sup>3</sup>
 </div>
 
-\begin{equation*}
-P(E)   = {n \choose k} p^k (1-p)^{ n-k} 
-\end{equation*}
+\\begin{equation*}
+P(E)   = {n \\choose k} p^k (1-p)^{ n-k} 
+\\end{equation*}
 
 
 *VD* stands for saturation vapor density and *Tc* for temperature in degrees Celsius. The equation was taken from (REF).
