@@ -62,7 +62,7 @@ $Rc
 
 I have implemented the following equation to calculate saturation vapor density at different temperatures:
 
-Let $\math VD = 5.018 + 0.32321 \times Tc + 8.1847 \times 10<sup>-3</sup> \times Tc^2 + 3.1243 \times 10^-4 \times Tc^3$
+![VD](./images/CodeCogsEqn.gif)
 
 ![VD](./images/VD_plot.png)
 
