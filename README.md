@@ -71,6 +71,6 @@ I have implemented the following equation to calculate saturation vapor density 
 
 * __Estimating surface area__
 
-for a frog 9.9 $times (m<sup>0.56</sup>)
+for a frog $9.9 \times (m<sup>0.56</sup>)$
 
 for a salamander 8.42 * (m<sup>0.694</sup>) 
