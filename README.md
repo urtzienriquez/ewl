@@ -73,11 +73,11 @@ I have implemented the following equation to calculate saturation vapor density 
 
 To estimate the surface area of a frog/toad, I have implemented this equation:
 
-9.9 &times; (*m*<sup>0.56</sup>); *where* m *stands for mass (in mg)*
+9.9 &times; (*m*<sup>0.56</sup>); *m stands for mass (in mg)*
 
-To estimate the surface area of a salamander, I have implemented this equation taken from Riddell *et al. 2017* Ecological Monographs [x]:
+To estimate the surface area of a salamander, I have implemented this equation taken from Riddell *et al.* 2017:
 
-8.42 * (m<sup>0.694</sup>) 
+8.42 &times; (m<sup>0.694</sup>); *m stands for mass (in mg)*
 
 
 ## References
