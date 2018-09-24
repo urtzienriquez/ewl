@@ -33,7 +33,7 @@ These parameters are required:
 **14. morpho:** either 'frog' or 'salamander' (to compute the surface area; SA)
 
 ## Using the function
-Once you have all the required parameters, just load the function and it will return a list with **Evaporative Water Loss** (EWL), **Mass Specific Evaporative Water Loss** (Mass_EWL), **Surface Area Specific Evaporative Water Loss** (SurfArea_EWL), and **skin resistance to water loss** (Rc)
+Once you have all the required parameters, just load the function and it will return a list with **Evaporative Water Loss** (EWL), **Mass Specific Evaporative Water Loss** (Mass_EWL), **Surface Area Specific Evaporative Water Loss** (SurfArea_EWL), and **skin resistance to water loss** (Rc). See next section for details of the calculations. 
 
 ```{r}
 source('./ewlR.R')
@@ -58,7 +58,7 @@ $Rc
 
 ## EWL calculations explained
 
-## Estimating saturation vapor density
+#### Estimating saturation vapor density
 
 I have implemented the following equation to calculate saturation vapor density at different temperatures:
 
