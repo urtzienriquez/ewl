@@ -41,6 +41,19 @@ source('./ewlR.R')
 ewlR(mass = 56, mass_m = 54, Vi = 1.04, Ve = 1.03, Vm = 1.00, 
      RHi = 0.036, RHe = 0.35, RHm = 0.36,
      Ti = 22.7, Te = 23.1, Tm = 23.2, Tskin = 19.3, Tskin_m = 19.5, morpho='frog')
+
+$EWL
+[1] 6.706037
+
+$Mass_EWL
+[1] 7.18504
+
+$SurfArea_EWL
+[1] 6.398645
+
+$Rc
+[1] 0.159015
+
 ```
 
 ## EWL calculations explained
