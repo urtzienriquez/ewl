@@ -79,6 +79,7 @@ To estimate the surface area of a salamander, I have implemented this equation t
 
 8.42 &times; (m<sup>0.694</sup>); *m stands for mass (in mg)*
 
+**NOTE: if you have the equation for your particular species, you can just change the equation (or parameters) within the ewlR function.**
 
 ## References
 
