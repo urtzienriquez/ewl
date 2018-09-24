@@ -1,11 +1,28 @@
-# parameters
-# mass:
+
+# ewlR function to calculate evaporative water loss and skin resistance
+#
+# PARAMETERS:
+#
+# mass: mass of frog/salamander in grams
+# mass_m: mass of the animal's agar model in grams
+# Vi: air flow in the empty chamber
+# Ve: air flow in the animal chamber
+# Vm: air flow in the agar model chamber
+# RHi: relative humidity in empty chamber (expressed as decimal fraction; e.g. 0.50 for a RH of 50%)
+# RHe: relative humidity in animal chamber (expressed as decimal fraction)
+# RHm: relative humidity in agar model chamber (expressed as decimal fraction)
+# Ti: temperature in empty chamber
+# Te: temperature in animal chamber
+# Tm: temperature in agar model chamber
+# Tskin: animal's skin temperature
+# Tskin_m: agar model's 'skin' (surface) temperature
+# morpho: either 'frog' or 'salamander' (to compute the surface area; SA)
 
 ewlR <- function(mass, mass_m, 
-                     Vi, Ve, Vm,
-                     RHi, RHe, RHm,
-                     Ti, Te, Tm, Tskin, Tskin_m,
-                     morpho=c('frog','salam')){
+                 Vi, Ve, Vm,
+                 RHi, RHe, RHm,
+                 Ti, Te, Tm, Tskin, Tskin_m,
+                 morpho=c('frog','salam')){
   
   # compute vapor density values from temperature using an equation:
   vapor_dens <- function(Tc){
