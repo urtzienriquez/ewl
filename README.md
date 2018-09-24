@@ -64,6 +64,9 @@ I have implemented the following equation to calculate saturation vapor density 
 
 ![VD](./images/CodeCogsEqn.gif)
 
+*VD* stands for saturation vapor density and *Tc* for temperature in degrees Celsius. The equation was taken from (REF).
+
+
 ![VD](./images/VD_plot.png)
 
 * __Estimating surface area__
