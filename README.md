@@ -30,6 +30,8 @@ These parameters are required:
 
 **13. T<sub>skin_m</sub>:** agar model's 'skin' (surface) temperature
 
+**14. morpho:** either 'frog' or 'salamander' (to compute the surface area; SA)
+
 
 ## Estimating saturation vapor density
 
