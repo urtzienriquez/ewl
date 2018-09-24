@@ -62,16 +62,7 @@ $Rc
 
 I have implemented the following equation to calculate saturation vapor density at different temperatures:
 
-![VD](./images/CodeCogsEqn.gif)
-
-<div align="center">
 *VD* = 5.018 + 0.32321 &times; *T<sub>c</sub>* + 8.1847 &times; 10<sup>-3</sup> &times; *T<sub>c</sub>*<sup>2</sup> + 3.1243 &times; 10<sup>-4</sup> &times; *T<sub>c</sub>*<sup>3</sup>
-</div>
-
-\\begin{equation*}
-P(E)   = {n \\choose k} p^k (1-p)^{ n-k} 
-\\end{equation*}
-
 
 *VD* stands for saturation vapor density and *Tc* for temperature in degrees Celsius. The equation was taken from (REF).
 
@@ -80,6 +71,16 @@ P(E)   = {n \\choose k} p^k (1-p)^{ n-k}
 
 * __Estimating surface area__
 
-for a frog 9.9 &times; (m<sup>0.56</sup>)
+To estimate the surface area of a frog/toad, I have implemented this equation:
 
-for a salamander 8.42 * (m<sup>0.694</sup>) 
+9.9 &times; (*m*<sup>0.56</sup>); *where* m *stands for mass (in mg)*
+
+To estimate the surface area of a salamander, I have implemented this equation taken from Riddell *et al. 2017* Ecological Monographs [x]:
+
+8.42 * (m<sup>0.694</sup>) 
+
+
+## References
+
+Riddell *et al.* 2017. Physical calculations of resistance to water loss improve predictions of species range models. *Ecological Monographs* **87(1): 21–33**
+
