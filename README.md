@@ -84,11 +84,10 @@ Water vapor density (&Omega;) values are determined this way:
 Evaporative water loss is also expressed as **Mass specific EWL**. To get this value, we need to divide total EWL by the mass of the animal and multiply by 60 (to convert minutes to hours):
 
 <p align="center">
-Mass_EWL = <i>EWL</i> &times; <span class="fraction"> 1 / <i>m</i> </span> &times; 60 min &frasl; 1 h
+Mass_EWL = <i>EWL</i> &times; <span class="fraction"> 1 / <i>m</i> </span> &times; <span class="fraction"> 60 min / 1 h </span> 60 min &frasl; 1 h ; <i>This is in mg g<sup>-1</sup> h<sup>-1</sup></i>
 </p>
 
 
-EWL mg min-1 x 1/g mass x 60 min h-1 = mg g-1 h-1
 
 * ### Estimating saturation vapor density
 
