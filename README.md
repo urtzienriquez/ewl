@@ -70,7 +70,9 @@ Water vapor density (&Omega;) values are determined this way:
 
 <p align="center">
 &Omega;<sub>e</sub> = <i>Saturatin vapor density at T<sub>e</sub></i> &times; <i>RH<sub>e</sub></i>
+</p>
 
+<p align="center">
 &Omega;<sub>i</sub> = <i>Saturatin vapor density at T<sub>i</sub></i> &times; <i>RH<sub>i</sub></i>
 </p>
 
