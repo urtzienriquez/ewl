@@ -76,8 +76,6 @@ Water vapor density (&Omega;) values are determined this way:
 
 I have implemented the following equation to calculate saturation vapor density at different temperatures:
 
-*VD* = 5.018 + 0.32321 &times; *T<sub>c</sub>* + 8.1847 &times; 10<sup>-3</sup> &times; *T<sub>c</sub>*<sup>2</sup> + 3.1243 &times; 10<sup>-4</sup> &times; *T<sub>c</sub>*<sup>3</sup>
-
 <p align="center">
 <i>VD</i> = 5.018 + 0.32321 &times; <i>T<sub>c</sub></i> + 8.1847 &times; 10<sup>-3</sup> &times; <i>T<sub>c</sub></i><sup>2</sup> + 3.1243 &times; 10<sup>-4</sup> &times; <i>T<sub>c</sub></i><sup>3</sup>
 </p>
@@ -93,11 +91,15 @@ The `morpho` parameter determines which equation is just to calculate the surfac
 
 To estimate the surface area of a frog/toad, I have implemented this equation:
 
-9.9 &times; (*m*<sup>0.56</sup>); *m stands for mass (in mg)*
+<p align="center">
+9.9 &times; (<i>m</i><sup>0.56</sup>); <i>m stands for mass (in mg)</i>
+</p>
 
 To estimate the surface area of a salamander, I have implemented this equation taken from Riddell *et al.* 2017:
 
-8.42 &times; (m<sup>0.694</sup>); *m stands for mass (in mg)*
+<p align="center">
+8.42 &times; (<i>m</i><sup>0.694</sup>); <i>m stands for mass (in mg)</i>
+</p>
 
 **NOTE: if you have the equation for your particular species, you can just change the equation (or parameters) within the ewlR function.**
 
