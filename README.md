@@ -71,6 +71,8 @@ I have implemented the following equation to calculate saturation vapor density 
 
 * __Estimating surface area__
 
+The `morpho` parameter determines which equation is just to calculate the surface area of the individual based on its mass. 
+
 To estimate the surface area of a frog/toad, I have implemented this equation:
 
 9.9 &times; (*m*<sup>0.56</sup>); *m stands for mass (in mg)*
