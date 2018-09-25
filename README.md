@@ -78,6 +78,10 @@ I have implemented the following equation to calculate saturation vapor density 
 
 *VD* = 5.018 + 0.32321 &times; *T<sub>c</sub>* + 8.1847 &times; 10<sup>-3</sup> &times; *T<sub>c</sub>*<sup>2</sup> + 3.1243 &times; 10<sup>-4</sup> &times; *T<sub>c</sub>*<sup>3</sup>
 
+<p align="center">
+<i>VD</i> = 5.018 + 0.32321 &times; <i>T<sub>c</sub></i> + 8.1847 &times; 10<sup>-3</sup> &times; <i>T<sub>c</sub></i><sup>2</sup> + 3.1243 &times; 10<sup>-4</sup> &times; <i>T<sub>c</sub></i><sup>3</sup>
+</p>
+
 *VD* stands for saturation vapor density and *T<sub>c</sub>* for temperature in degrees Celsius. The equation was taken from (REF).
 
 
