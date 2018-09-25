@@ -5,7 +5,6 @@ R code (ewlR function) to compute evaporative water loss and skin resistance of 
 These parameters are required:
 
 `mass`: mass of frog/salamander in grams
-
 `mass_m`: mass of the animal's agar model in grams
 
 **3. V<sub>i</sub>:** air flow in the empty chamber
