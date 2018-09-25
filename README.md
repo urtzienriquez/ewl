@@ -33,7 +33,7 @@ These parameters are required:
 `morpho`: either 'frog' or 'salamander' (to compute the surface area; SA)
 
 ## Using the function
-Once you have all the required parameters, just load the function and it will return a list with **Evaporative Water Loss** (EWL), **Mass Specific Evaporative Water Loss** (Mass_EWL), **Surface Area Specific Evaporative Water Loss** (SurfArea_EWL), and **skin resistance to water loss** (Rc). See next section for details of the calculations. 
+Once you have all the required parameters, just load the function and it will return a list with **Evaporative Water Loss** (`EWL`), **Mass Specific Evaporative Water Loss** (`Mass_EWL`), **Surface Area Specific Evaporative Water Loss** (`SurfArea_EWL`), and **skin resistance to water loss** (`Rc`). See next section for details of the calculations. 
 
 ```{r}
 source('./ewlR.R')
