@@ -60,15 +60,19 @@ $Rc
 
 We will determine evaporative water loss (`EWL`) following the next equation:
 
-*EWL* = *V<sub>e</sub>* &times; &Omega;<sub>e</sub> - *V<sub>i</sub>* &times; &Omega;<sub>i</sub> &mdash; This is in mg min<sup>-1</sup>
+<p align="center">
+<i>EWL</i> = <i>V<sub>e</sub></i> &times; &Omega;<sub>e</sub> - <i>V<sub>i</sub></i> &times; &Omega;<sub>i</sub> &mdash; <i>This is in mg min<sup>-1</sup></i>
+</p>
 
 *V<sub>e</sub>* is the flow in the chamber with the animal. *V<sub>i</sub>* is the flow in the empty chamber (or in the chamber *without* the animal). &Omega;<sub>e</sub> is the water vapor density in the chamber with the animal. &Omega;<sub>i</sub> is the water vapor density in the empty chamber. 
 
 Water vapor density (&Omega;) values are determined this way:
 
-&Omega;<sub>e</sub> = *Saturatin vapor density at T<sub>e</sub>* &times; *RH<sub>e</sub>*
+<p align="center">
+&Omega;<sub>e</sub> = <i>Saturatin vapor density at T<sub>e</sub></i> &times; <i>RH<sub>e</sub></i>
 
-&Omega;<sub>i</sub> = *Saturatin vapor density at T<sub>i</sub>* &times; *RH<sub>i</sub>*
+&Omega;<sub>i</sub> = <i>Saturatin vapor density at T<sub>i</sub></i> &times; <i>RH<sub>i</sub></i>
+</p>
 
 *RH* is the relative humidity either in the animal (`RHe`) or empty (`RHi`) chamber in decimal fraction. Saturation vapor density can be obtained looking at the Smithsonian Table 108 and finding the value that corresponds to the temperature measured either in the animal (`Te`) or empty (`Ti`) chamber. However, I have implemented an equation that does that automaticly, based on those temperatures (see [ Estimating saturation vapor density ](#estimating-saturation-vapor-density)).
 
