@@ -58,6 +58,13 @@ $Rc
 
 ## EWL calculations explained
 
+We will determine evaporative water loss (`EWL`) following the next equation:
+*EWL* = *V<sub>e</sub>* &times; &Omega; <sub>e</sub> - Vi * OMEGAi # This is in mg min-1
+#
+# Thus, first we have to calculate all the parameters:
+
+
+
 * __Estimating saturation vapor density__
 
 I have implemented the following equation to calculate saturation vapor density at different temperatures:
