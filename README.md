@@ -59,7 +59,7 @@ $Rc
 ## EWL calculations explained
 
 We will determine evaporative water loss (`EWL`) following the next equation:
-*EWL* = *V<sub>e</sub>* &times; &Omega; <sub>e</sub> - *V<sub>i</sub>* &times; &Omega; <sub>i</sub> &longdash; This is in mg min<sup>-1</sup>
+*EWL* = *V<sub>e</sub>* &times; &Omega; <sub>e</sub> - *V<sub>i</sub>* &times; &Omega; <sub>i</sub> &emdash; This is in mg min<sup>-1</sup>
 
 
 
