@@ -1,6 +1,6 @@
 # Evaporative Water Loss
 
-R code (ewlR function) to compute evaporative water loss and skin resistance of frogs or salamanders measured in air flow chambers (see REF for experimental protocol). I want to thank Keith A. Christian for help with calculations (see [ EWL calculations explained ](##EWL-calculations-explained)). 
+R code (ewlR function) to compute evaporative water loss and skin resistance of frogs or salamanders measured in air flow chambers (see REF for experimental protocol). I want to thank Keith A. Christian for help with calculations (see [ EWL calculations explained ](#ewl-calculations-explained)). 
 
 These parameters are required:
 
@@ -70,7 +70,7 @@ Water vapor density (&Omega;) values are determined this way:
 
 &Omega;<sub>i</sub> = *Saturatin vapor density at T<sub>i</sub>* &times; *RH<sub>i</sub>*
 
-*RH* is the relative humidity either in the animal (`RHe`) or empty (`RHi`) chamber in decimal fraction. Saturation vapor density can be obtained looking at the Smithsonian Table 108 and finding the value that corresponds to the temperature measured either in the animal (`Te`) or empty (`Ti`) chamber. However, I have implemented an equation that does that automaticly, based on those temperatures (see [ Estimating saturation vapor density ](#Estimating-saturation-vapor-density)).
+*RH* is the relative humidity either in the animal (`RHe`) or empty (`RHi`) chamber in decimal fraction. Saturation vapor density can be obtained looking at the Smithsonian Table 108 and finding the value that corresponds to the temperature measured either in the animal (`Te`) or empty (`Ti`) chamber. However, I have implemented an equation that does that automaticly, based on those temperatures (see [ Estimating saturation vapor density ](#estimating-saturation-vapor-density)).
 
 * ### Estimating saturation vapor density
 
