@@ -58,13 +58,15 @@ $Rc
 
 ## EWL calculations explained
 
-We will determine evaporative water loss (`EWL`) following the next equation:
+We will determine **evaporative water loss** (`EWL`) following the next equation:
 
 <p align="center">
 <i>EWL</i> = <i>V<sub>e</sub></i> &times; &Omega;<sub>e</sub> - <i>V<sub>i</sub></i> &times; &Omega;<sub>i</sub> ; <i>This is in mg min<sup>-1</sup></i>
 </p>
 
 *V<sub>e</sub>* is the flow in the chamber with the animal. *V<sub>i</sub>* is the flow in the empty chamber (or in the chamber *without* the animal). &Omega;<sub>e</sub> is the water vapor density in the chamber with the animal. &Omega;<sub>i</sub> is the water vapor density in the empty chamber. 
+
+Air flow values (*V*) are measured with the flowmeter (either digital or analogic, depending on your experimental setup). 
 
 Water vapor density (&Omega;) values are determined this way:
 
@@ -77,6 +79,16 @@ Water vapor density (&Omega;) values are determined this way:
 </p>
 
 *RH* is the relative humidity either in the animal (`RHe`) or empty (`RHi`) chamber in decimal fraction. Saturation vapor density can be obtained looking at the Smithsonian Table 108 and finding the value that corresponds to the temperature measured either in the animal (`Te`) or empty (`Ti`) chamber. However, I have implemented an equation that does that automaticly, based on those temperatures (see [ Estimating saturation vapor density ](#estimating-saturation-vapor-density)).
+
+
+Evaporative water loss is also expressed as **Mass specific EWL**. To get this value, we need to divide total EWL by the mass of the animal and multiply by 60 (to convert minutes to hours):
+
+<p align="center">
+Mass_EWL = <i>EWL</i> &times; 1 &frac; <i>m</i> &times; 60 min &frac; 1 h
+</p>
+
+
+EWL mg min-1 x 1/g mass x 60 min h-1 = mg g-1 h-1
 
 * ### Estimating saturation vapor density
 
