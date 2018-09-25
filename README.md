@@ -83,7 +83,7 @@ I have implemented the following equation to calculate saturation vapor density 
 
 ![VD](./images/VD_plot.png)
 
-* __Estimating surface area__
+* ### Estimating surface area
 
 The `morpho` parameter determines which equation is just to calculate the surface area of the individual based on its mass. 
 
