@@ -61,7 +61,7 @@ $Rc
 We will determine evaporative water loss (`EWL`) following the next equation:
 
 <p align="center">
-<i>EWL</i> = <i>V<sub>e</sub></i> &times; &Omega;<sub>e</sub> - <i>V<sub>i</sub></i> &times; &Omega;<sub>i</sub> &mdash; <i>This is in mg min<sup>-1</sup></i>
+<i>EWL</i> = <i>V<sub>e</sub></i> &times; &Omega;<sub>e</sub> - <i>V<sub>i</sub></i> &times; &Omega;<sub>i</sub> ; <i>This is in mg min<sup>-1</sup></i>
 </p>
 
 *V<sub>e</sub>* is the flow in the chamber with the animal. *V<sub>i</sub>* is the flow in the empty chamber (or in the chamber *without* the animal). &Omega;<sub>e</sub> is the water vapor density in the chamber with the animal. &Omega;<sub>i</sub> is the water vapor density in the empty chamber. 
@@ -98,13 +98,13 @@ The `morpho` parameter determines which equation is just to calculate the surfac
 To estimate the surface area of a frog/toad, I have implemented this equation:
 
 <p align="center">
-9.9 &times; (<i>m</i><sup>0.56</sup>); <i>m stands for mass (in mg)</i>
+9.9 &times; (<i>m</i><sup>0.56</sup>) ; <i>m stands for mass (in mg)</i>
 </p>
 
 To estimate the surface area of a salamander, I have implemented this equation taken from Riddell *et al.* 2017:
 
 <p align="center">
-8.42 &times; (<i>m</i><sup>0.694</sup>); <i>m stands for mass (in mg)</i>
+8.42 &times; (<i>m</i><sup>0.694</sup>) ; <i>m stands for mass (in mg)</i>
 </p>
 
 **NOTE: if you have the equation for your particular species, you can just change the equation (or parameters) within the ewlR function.**
