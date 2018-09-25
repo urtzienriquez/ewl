@@ -5,31 +5,32 @@ R code (ewlR function) to compute evaporative water loss and skin resistance of 
 These parameters are required:
 
 `mass`: mass of frog/salamander in grams
+
 `mass_m`: mass of the animal's agar model in grams
 
-**3. V<sub>i</sub>:** air flow in the empty chamber
+`Vi`: air flow in the empty chamber
 
-**4. V<sub>e</sub>:** air flow in the animal chamber
+`Ve`: air flow in the animal chamber
 
-**5. V<sub>m</sub>:** air flow in the agar model chamber
+`Vm`: air flow in the agar model chamber
 
-**6. RH<sub>i</sub>:** relative humidity in empty chamber (expressed as decimal fraction; e.g. 0.50 for a RH of 50%)
+`RHi`: relative humidity in empty chamber (expressed as decimal fraction; e.g. 0.50 for a RH of 50%)
 
-**7. RH<sub>e</sub>:** relative humidity in animal chamber (expressed as decimal fraction)
+`RHe`: relative humidity in animal chamber (expressed as decimal fraction)
 
-**8. RH<sub>m</sub>:** relative humidity in agar model chamber (expressed as decimal fraction)
+`RHm`: relative humidity in agar model chamber (expressed as decimal fraction)
 
-**9. T<sub>i</sub>:** temperature in empty chamber
+`Ti`: temperature in empty chamber
 
-**10. T<sub>e</sub>:** temperature in animal chamber
+`Te`: temperature in animal chamber
 
-**11. T<sub>m</sub>:** temperature in agar model chamber
+`Tm`: temperature in agar model chamber
 
-**12. T<sub>skin</sub>:** animal's skin temperature
+`Tskin`: animal's skin temperature
 
-**13. T<sub>skin_m</sub>:** agar model's 'skin' (surface) temperature
+`Tskin_m`: agar model's 'skin' (surface) temperature
 
-**14. morpho:** either 'frog' or 'salamander' (to compute the surface area; SA)
+`morpho`: either 'frog' or 'salamander' (to compute the surface area; SA)
 
 ## Using the function
 Once you have all the required parameters, just load the function and it will return a list with **Evaporative Water Loss** (EWL), **Mass Specific Evaporative Water Loss** (Mass_EWL), **Surface Area Specific Evaporative Water Loss** (SurfArea_EWL), and **skin resistance to water loss** (Rc). See next section for details of the calculations. 
