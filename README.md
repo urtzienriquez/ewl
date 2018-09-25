@@ -70,7 +70,7 @@ Water vapor density (&Omega;) values are determined this way:
 
 &Omega;<sub>i</sub> = *Saturatin vapor density at T<sub>i</sub>* &times; *RH<sub>i</sub>*
 
-*RH* is the relative humidity either in the animal (`RHe`) or empty (`RHi`) chamber in decimal fraction. Saturation vapor density can be obtained looking at the Smithsonian Table 108 and finding the value that corresponds to the temperature measured either in the animal (`Te`) or empty (`Ti`) chamber. However, I have implemented an equation that does that automaticly, based on those temperatures (see [Estimating saturation vapor density](### Estimating saturation vapor density)).
+*RH* is the relative humidity either in the animal (`RHe`) or empty (`RHi`) chamber in decimal fraction. Saturation vapor density can be obtained looking at the Smithsonian Table 108 and finding the value that corresponds to the temperature measured either in the animal (`Te`) or empty (`Ti`) chamber. However, I have implemented an equation that does that automaticly, based on those temperatures (see [ Estimating saturation vapor density ](#Estimating-saturation-vapor-density)).
 
 * ### Estimating saturation vapor density
 
