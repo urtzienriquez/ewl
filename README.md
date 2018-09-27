@@ -71,22 +71,27 @@ Air flow values (*V*) are measured with the flowmeter (either digital or analogi
 Water vapor density (&Omega;) values are determined this way:
 
 <p align="center">
-&Omega;<sub>e</sub> = <i>Saturatin vapor density at T<sub>e</sub></i> &times; <i>RH<sub>e</sub></i>
+&Omega;<sub>e</sub> = <i>Saturation vapor density at T<sub>e</sub></i> &times; <i>RH<sub>e</sub></i>
 </p>
 
 <p align="center">
-&Omega;<sub>i</sub> = <i>Saturatin vapor density at T<sub>i</sub></i> &times; <i>RH<sub>i</sub></i>
+&Omega;<sub>i</sub> = <i>Saturation vapor density at T<sub>i</sub></i> &times; <i>RH<sub>i</sub></i>
 </p>
 
 *RH* is the relative humidity either in the animal (`RHe`) or empty (`RHi`) chamber in decimal fraction. Saturation vapor density can be obtained looking at the Smithsonian Table 108 and finding the value that corresponds to the temperature measured either in the animal (`Te`) or empty (`Ti`) chamber. However, I have implemented an equation that does that automaticly, based on those temperatures (see [ Estimating saturation vapor density ](#estimating-saturation-vapor-density)).
 
 
-Evaporative water loss is also expressed as **Mass specific EWL**. To get this value, we need to divide total EWL by the mass of the animal and multiply by 60 (to convert minutes to hours):
+Evaporative water loss is also expressed as **Mass specific EWL** (`Mass_EWL`). To get this value, we need to divide total EWL by the mass of the animal and multiply by 60 (to convert minutes to hours):
 
 <p align="center">
-Mass_EWL = <i>EWL</i> &times; <span class="fraction"> 1 / <i>m</i> </span> &times; <span class="fraction"> 60 min / 1 h </span> ; <i>This is in mg g<sup>-1</sup> h<sup>-1</sup></i>
+<i>Mass_EWL</i> = <i>EWL</i> &times; <span class="fraction"> 1 / <i>m</i> </span> &times; <span class="fraction"> 60 min / 1 h </span> ; <i>This is in mg g<sup>-1</sup> h<sup>-1</sup></i>
 </p>
 
+Evaporative water loss is also usually reported as **Surface area specific EWL** (`SurfArea_EWL`), which is obtained by dividing total EWL by the surface area (*SA*; see [ Estimating surface area ](#estimating-surface-area) for surface area calculations) of an individual in water conserving posture (2/3 *SA*). This value is then multiplied by 60 (to convert minutes to hours):
+
+<p align="center">
+<i>SurfArea_EWL</i> = <i>EWL</i> &times; <span class="fraction"> 1 / (2/3 &times; <i>SA</i>) </span> &times; <span class="fraction"> 60 min / 1 h </span> ; <i>This is in mg cm<sup>2</sup> h<sup>-1</sup></i>
+</p>
 
 
 * ### Estimating saturation vapor density
