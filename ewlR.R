@@ -52,11 +52,14 @@ ewlR <- function(mass, mass_m,
   # SURFACE AREA SPECIFIC EVAPORATIVE WATER LOSS (SA_EWL)
   #equations to compute SA
   
+  # for an anuran
   if(morpho=='frog'){
     SA_func <- function(m){
       return(9.9 * (m^0.56))
     }
   }
+  
+  # for a urodele
   if(morpho=='salam'){
     SA_func <- function(m){
       return(8.42 * (m^0.694)) # Using the equation in Riddell et al 2017
@@ -72,14 +75,14 @@ ewlR <- function(mass, mass_m,
   
   ######
   # CUTANEOUS RESISTANCE TO WATER LOSS 
+  
+  # for these we need to re-calculate all parameters but for the agar model.
   VDe_m <- vapor_dens(Tm)
   VDs_m <- vapor_dens(Tskin_m)
   
   OMEGAe_m <- VDe_m * RHm # water vapor density in the agar model chamber
   
   EWL_m <- Vm * OMEGAe_m - Vi * OMEGAi # evaporative water loss for the agar model
-  
-  M_EWL_m <- (EWL_m / mass_m) * 60
   
   SA_m <- SA_func(mass_m)
   
@@ -100,7 +103,7 @@ ewlR <- function(mass, mass_m,
   
   rc <- rT - rb
   
-  return(list(EWL=EWL, Mass_EWL=M_EWL, SurfArea_EWL=SA_EWL, Rc=rc, morph=SA_func))
+  return(list(EWL=EWL, Mass_EWL=M_EWL, SurfArea_EWL=SA_EWL, Rc=rc))
 }
 
 
