@@ -116,7 +116,7 @@ To calculate total resistance (&Gamma;<sub>T</sub>) we use the next expression:
 <i> VDD = VD<sub>s</sub> - &Omega;<sub>e</sub> </i>
 </p>
 
-*VD<sub>s</sub>* is the vapor density at the animals skin and can be obtained by measuring the skin temperature (`Tskin`). This temperature value is the converted to saturation vapor density automaticly using an empirical equation (see [ Estimating saturation vapor density ](#estimating-saturation-vapor-density)). &Omega;<sub>e</sub> (water vapor density in the chamber with the animal) was calculated to compute EWL (see above). 
+*VD<sub>s</sub>* is the vapor density at the animals skin and can be obtained by measuring the skin temperature (`Tskin`). This temperature value is then converted to saturation vapor density automaticly using an empirical equation (see [ Estimating saturation vapor density ](#estimating-saturation-vapor-density)). &Omega;<sub>e</sub> (water vapor density in the chamber with the animal) was calculated to compute EWL (see above). 
 
 As we already mentioned, agar replicas of animals have no cutaneous resistance to water loss and thus, &Gamma;<sub>T</sub> = &Gamma;<sub>b</sub>. To calculate skin resistance (`Rc`), we need to re-do all calculations for the agar model, calculate &Gamma;<sub>T</sub> for the model as explained above (and based on the models' 'skin' temperature; `Tskin_m`). Finally, we only have to subtract the values:
 
