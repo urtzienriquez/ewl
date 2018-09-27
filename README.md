@@ -90,7 +90,7 @@ Evaporative water loss is also expressed as **Mass specific EWL** (`Mass_EWL`). 
 Evaporative water loss is also usually reported as **Surface area specific EWL** (`SurfArea_EWL`), which is obtained by dividing total EWL by the surface area (*SA*; see [ Estimating surface area ](#estimating-surface-area) for surface area calculations) of an individual in water conserving posture (2/3 *SA*). This value is then multiplied by 60 (to convert minutes to hours):
 
 <p align="center">
-<i>SurfArea_EWL</i> = <i>EWL</i> &times; <span class="fraction"> 1 / (2/3 &times; <i>SA</i>) </span> &times; <span class="fraction"> 60 min / 1 h </span> ; <i>This is in mg cm<sup>2</sup> h<sup>-1</sup></i>
+<i>SurfArea_EWL</i> = <i>EWL</i> &times; <span class="fraction"> 1 / (2/3 &times; <i>SA</i>) </span> &times; <span class="fraction"> 60 min / 1 h </span> ; <i>This is in mg cm<sup>-2</sup> h<sup>-1</sup></i>
 </p>
 
 
