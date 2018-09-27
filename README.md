@@ -96,7 +96,7 @@ Evaporative water loss is also usually reported as **Surface area specific EWL**
 
 * ### Skin resistance to water loss
 
-
+To compute skin resistance to cutaneous water loss (`Rc`) we need to compare EWL of living animals and agar models with 0 skin resistance. The total resistance to water loss, &Gamma;<sub>T</sub> consists of two parts:
 
 * ### Estimating saturation vapor density
 
