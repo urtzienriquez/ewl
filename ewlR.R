@@ -100,7 +100,7 @@ ewlR <- function(mass, mass_m,
   
   rc <- rT - rb
   
-  return(list(EWL=EWL, Mass_EWL=M_EWL, SurfArea_EWL=SA_EWL, Rc=rc))
+  return(list(EWL=EWL, Mass_EWL=M_EWL, SurfArea_EWL=SA_EWL, Rc=rc, morph=SA_func))
 }
 
 
