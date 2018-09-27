@@ -94,6 +94,13 @@ Evaporative water loss is also usually reported as **Surface area specific EWL**
 </p>
 
 
+<p align="center">
+<i>SurfArea_EWL</i> = <i>EWL</i> &times; <div class="top">1</div><div class="bottom">(2/3 &times; <i>SA</i>)</div> &times; <span class="fraction"> 60 min / 1 h </span> ; <i>This is in mg cm<sup>2</sup> h<sup>-1</sup></i>
+</p>
+
+
+
+
 * ### Estimating saturation vapor density
 
 I have implemented the following equation to calculate saturation vapor density at different temperatures:
