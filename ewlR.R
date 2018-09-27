@@ -52,22 +52,21 @@ ewlR <- function(mass, mass_m,
   # SURFACE AREA SPECIFIC EVAPORATIVE WATER LOSS (SA_EWL)
   #equations to compute SA
   
-  if(morpho=='frog')
-  # for a amph:
-  SA_frog <- function(m){
-    return(9.9 * (m^0.56))
+  if(morpho=='frog'){
+    SA_func <- function(m){
+      return(9.9 * (m^0.56))
+    }
+  }
+  if(morpho=='salam'){
+    SA_func <- function(m){
+      return(8.42 * (m^0.694)) # Using the equation in Riddell et al 2017
+    }
   }
   
-  # salamander:
-  SA_salam <- function(m){
-    return(8.42 * (m^0.694)) # Using the equation in Riddell et al 2017
-  }
-  
-  ifelse(morpho=='frog', SA <- SA_frog(mass), SA <- SA_salam(mass))
-  
-  ifelse(morpho=='frog', SA_m <- SA_frog(mass_m), SA_m <- SA_salam(mass_m))
+  SA <- SA_func(mass)
   
   SA_wc <- SA*(2/3) # surface area at water conserving posture
+  
   SA_EWL <- (EWL / SA_wc) * 60
   
   
@@ -81,6 +80,8 @@ ewlR <- function(mass, mass_m,
   EWL_m <- Vm * OMEGAe_m - Vi * OMEGAi # evaporative water loss for the agar model
   
   M_EWL_m <- (EWL_m / mass_m) * 60
+  
+  SA_m <- SA_func(mass_m)
   
   SA_wc_m <- SA_m*(2/3) # surface area at water conserving posture
   SA_EWL_m <- (EWL_m / SA_wc_m) * 60
