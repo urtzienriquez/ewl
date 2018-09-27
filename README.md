@@ -96,9 +96,9 @@ Evaporative water loss is also usually reported as **Surface area specific EWL**
 
 * ### Skin resistance to water loss
 
-To compute skin resistance to cutaneous water loss (`Rc`) we need to compare EWL of living animals and agar models with 0 skin resistance. 
+To compute cutaneous resistance to  water loss (`Rc`) we need to compare EWL of living animals and agar models with no skin resistance. 
 
-The total resistance to water loss, &Gamma;<sub>T</sub> consists of two parts: the boundary layer resistance (&Gamma;<sub>b</sub>; a function of the size and shape of the animal) and the cutaneous resistance (&Gamma;<sub>c</sub>), which is caused by characteristics of the skin or secretions on the skin. Hence:
+The total resistance to water loss (&Gamma;<sub>T</sub>) consists of two parts: the boundary layer resistance (&Gamma;<sub>b</sub>; a function of the size and shape of the animal) and the cutaneous resistance (&Gamma;<sub>c</sub>), which is caused by characteristics of the skin or secretions on the skin. Hence:
 
 <p align="center">
 &Gamma;<sub>T</sub> = &Gamma;<sub>b</sub> + &Gamma;<sub>c</sub>
@@ -118,7 +118,9 @@ To calculate total resistance (&Gamma;<sub>T</sub>) we use the next expression:
 
 *VD<sub>s</sub>* is the vapor density at the animals skin and can be obtained by measuring the skin temperature (`Tskin`). This temperature value is then converted to saturation vapor density automaticly using an empirical equation (see [ Estimating saturation vapor density ](#estimating-saturation-vapor-density)). &Omega;<sub>e</sub> (water vapor density in the chamber with the animal) was calculated to compute EWL (see above). 
 
-As we already mentioned, agar replicas of animals have no cutaneous resistance to water loss and thus, &Gamma;<sub>T</sub> = &Gamma;<sub>b</sub>. To calculate skin resistance (`Rc`), we need to re-do all calculations for the agar model, calculate &Gamma;<sub>T</sub> for the model as explained above (and based on the models' 'skin' temperature; `Tskin_m`). Finally, we only have to subtract the values:
+As we already mentioned, agar replicas of animals have no cutaneous resistance to water loss and thus, &Gamma;<sub>T</sub> = &Gamma;<sub>b</sub>. To calculate boundary layer resistance (&Gamma;<sub>b</sub>), we need to re-do all calculations for the agar model and calculate &Gamma;<sub>T</sub> for the model as explained above (according to the models' 'skin' temperature; `Tskin_m`). 
+
+To calculate cutaneous resistance to water loss (`Rc` &Gamma;<sub>b</sub>), we only have to subtract the models' &Gamma;<sub>T</sub> value (= &Gamma;<sub>b</sub>) from animals &Gamma;<sub>T</sub> (= &Gamma;<sub>T</sub>):
 
 <p align="center">
 <i> &Gamma;<sub>c</sub> = &Gamma;<sub>T, animal</sub> - &Gamma;<sub>T, model</sub> </i>
