@@ -96,7 +96,20 @@ Evaporative water loss is also usually reported as **Surface area specific EWL**
 
 * ### Skin resistance to water loss
 
-To compute skin resistance to cutaneous water loss (`Rc`) we need to compare EWL of living animals and agar models with 0 skin resistance. The total resistance to water loss, &Gamma;<sub>T</sub> consists of two parts:
+To compute skin resistance to cutaneous water loss (`Rc`) we need to compare EWL of living animals and agar models with 0 skin resistance. 
+
+The total resistance to water loss, &Gamma;<sub>T</sub> consists of two parts: the boundary layer resistance (&Gamma;<sub>b</sub>; a function of the size and shape of the animal) and the cutaneous resistance (&Gamma;<sub>c</sub>), which is caused by characteristics of the skin or secretions on the skin. Hence:
+
+<p align="center">
+&Gamma;<sub>T</sub> = &Gamma;<sub>b</sub> + &Gamma;<sub>c</sub>
+</p>
+
+To calculate total resistance (&Gamma;<sub>T</sub>) we use the next expression:
+
+<p align="center">
+&Gamma;<sub>T</sub> = <span class="fraction"> *VDD* / *SurfArea_EWL* </span>
+</p>
+
 
 * ### Estimating saturation vapor density
 
