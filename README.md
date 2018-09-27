@@ -108,7 +108,8 @@ To calculate total resistance (&Gamma;<sub>T</sub>) we use the next expression:
 
 <p align="center">
 &Gamma;<sub>T</sub> = <span class="fraction"> <i>VDD</i> / <i>SurfArea_EWL</i> </span>
-
+</p>
+<p align="center">
 <i> where VDD = VD<sub>s</sub> - &Omega;<sub>e</sub> </i>
 </p>
 
