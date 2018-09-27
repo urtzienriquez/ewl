@@ -32,26 +32,27 @@ ewlR <- function(mass, mass_m,
   
   VDi <- vapor_dens(Ti)
   VDe <- vapor_dens(Te)
-  VDe_m <- vapor_dens(Tm)
   VDs <- vapor_dens(Tskin)
-  VDs_m <- vapor_dens(Tskin_m)
   
-  # total evaporative water loss (EWL)
+  ######
+  # TOTAL EVAPORATIVE WATER LOSS  (EWL)
+  
   OMEGAe <- VDe * RHe # water vapor density in the animal chamber
   OMEGAi <- VDi * RHi # water vapor density in the blank chamber
-  OMEGAe_m <- VDe_m * RHm # water vapor density in the agar model chamber
   
   EWL <- Ve * OMEGAe - Vi * OMEGAi # evaporative water loss for the amph (mg min-1)
-  EWL_m <- Vm * OMEGAe_m - Vi * OMEGAi # evaporative water loss for the agar model
   
   
-  
-  # mass specific evaporative water loss (M_EWL)
+  ######
+  # MASS SPECIFIC EVAPORATIVE WATER LOSS (M_EWL)
   M_EWL <- (EWL / mass) * 60 # This is in mg g-1 h-1
-  M_EWL_m <- (EWL_m / mass_m) * 60
   
-  # surface area specific evaporative water loss (SA_EWL)
+  
+  ######
+  # SURFACE AREA SPECIFIC EVAPORATIVE WATER LOSS (SA_EWL)
   #equations to compute SA
+  
+  if(morpho=='frog')
   # for a amph:
   SA_frog <- function(m){
     return(9.9 * (m^0.56))
@@ -67,25 +68,32 @@ ewlR <- function(mass, mass_m,
   ifelse(morpho=='frog', SA_m <- SA_frog(mass_m), SA_m <- SA_salam(mass_m))
   
   SA_wc <- SA*(2/3) # surface area at water conserving posture
-  SA_wc_m <- SA_m*(2/3) # surface area at water conserving posture
-  
   SA_EWL <- (EWL / SA_wc) * 60
+  
+  
+  ######
+  # CUTANEOUS RESISTANCE TO WATER LOSS 
+  VDe_m <- vapor_dens(Tm)
+  VDs_m <- vapor_dens(Tskin_m)
+  
+  OMEGAe_m <- VDe_m * RHm # water vapor density in the agar model chamber
+  
+  EWL_m <- Vm * OMEGAe_m - Vi * OMEGAi # evaporative water loss for the agar model
+  
+  M_EWL_m <- (EWL_m / mass_m) * 60
+  
+  SA_wc_m <- SA_m*(2/3) # surface area at water conserving posture
   SA_EWL_m <- (EWL_m / SA_wc_m) * 60
-  
-  
-  
-  
-  # cutaneous skin resistance to water loss
   
   # frog: rT
   VDD <- VDs - OMEGAe
-  EWL_SA <- SA_EWL / 3.6
+  EWL_SA <- SA_EWL / 3.6 # this is just a conversion factor to convert to s cm-1
   
   rT <- VDD/EWL_SA
   
   # agar model: rb 
   VDD_m <- VDs_m - OMEGAe_m
-  EWL_SA_m <- SA_EWL_m / 3.6
+  EWL_SA_m <- SA_EWL_m / 3.6 # this is just a conversion factor to convert to s cm-1
   
   rb <- VDD_m/EWL_SA_m
   
