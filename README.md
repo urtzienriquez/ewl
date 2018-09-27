@@ -1,6 +1,6 @@
 # Evaporative Water Loss
 
-R code (ewlR function) to compute evaporative water loss and skin resistance of frogs or salamanders measured in air flow chambers (see REF for experimental protocol). I want to thank Keith A. Christian for help with calculations (see [ EWL calculations explained ](#ewl-calculations-explained)). 
+R code (ewlR function) to compute evaporative water loss and skin resistance of frogs or salamanders measured in air flow chambers (see REF for experimental protocol). I want to thank *Keith A. Christian* for help with calculations (see [ EWL calculations explained ](#ewl-calculations-explained)). 
 
 These parameters are required:
 
