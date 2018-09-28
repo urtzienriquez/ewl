@@ -1,6 +1,6 @@
-# Evaporative Water Loss
+# Evaporative Water Loss of Amphibians
 
-R code (ewlR function) to compute evaporative water loss and skin resistance of frogs or salamanders measured in air flow chambers (see REF for experimental protocol). I want to thank **Keith A. Christian** for help with calculations (see [ EWL calculations explained ](#ewl-calculations-explained)). 
+R code (ewlR function) to compute evaporative water loss and skin resistance of frogs or salamanders measured in air flow chambers (see e.g. Young *et al.* 2005 for experimental protocol). I want to thank **Keith A. Christian** for help with calculations (see [ EWL calculations explained ](#ewl-calculations-explained)). 
 
 These parameters are required:
 
@@ -160,5 +160,8 @@ To estimate the surface area of a salamander, I have implemented this equation t
 
 ## References
 
-Riddell *et al.* 2017. Physical calculations of resistance to water loss improve predictions of species range models. *Ecological Monographs* **87(1): 21–33**
+Young *et al.* 2005. Comparative analysis of cutaneous evaporative water loss in frogs
+demonstrates correlation with ecological habits. *Physiological and Biochemical Zoology* **78(5):847–856**.
+
+Riddell *et al.* 2017. Physical calculations of resistance to water loss improve predictions of species range models. *Ecological Monographs* **87(1): 21–33**.
 
