@@ -135,7 +135,7 @@ I have implemented the following equation to calculate saturation vapor density 
 <i>VD</i> = 5.018 + 0.32321 &times; <i>T<sub>c</sub></i> + 8.1847 &times; 10<sup>-3</sup> &times; <i>T<sub>c</sub></i><sup>2</sup> + 3.1243 &times; 10<sup>-4</sup> &times; <i>T<sub>c</sub></i><sup>3</sup>
 </p>
 
-*VD* stands for saturation vapor density and *T<sub>c</sub>* for temperature in degrees Celsius. The equation was taken from (REF).
+*VD* stands for saturation vapor density and *T<sub>c</sub>* for temperature in degrees Celsius. The equation was taken from http://hyperphysics.phy-astr.gsu.edu/hbase/Kinetic/relhum.html#c3.
 
 
 ![VD](./images/VD_plot.png)
