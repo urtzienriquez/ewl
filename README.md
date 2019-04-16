@@ -145,7 +145,7 @@ Subsequently, we calculate saturation vapor density (*&rho;<sub>w</sub>*) follow
 <i>&rho;<sub>w</sub> = e<sub>w</sub> / (C<sub>v</sub> &times; R<sub>w</sub> &times; T)</i>
 </p>
 
-*e<sub>w</sub>* stands for saturation vapor pressure (in mb.), *C<sub>v</sub>* is the "compressibility factor" for water vapor, *R<sub>w</sub>* represents the gas content for water vapor, and *T* the temperature of the vapor (in ºK).
+*e<sub>w</sub>* stands for saturation vapor pressure (in mb.), *C<sub>v</sub>* is the "compressibility factor" for water vapor, *R<sub>w</sub>* represents the gas content for water vapor, and *T* is the temperature of the vapor (in ºK).
 
 
 * ### Estimating surface area
