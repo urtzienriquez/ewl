@@ -132,7 +132,9 @@ To calculate cutaneous resistance to water loss (`Rc`; &Gamma;<sub>c</sub>), we 
 The calculations are based on equations from **List RJ 1971. Smithsonian Meteorological Tables. Smithsonian Institution Press. Washington, DC.** First we need to calculate saturation vapor pressure (*e<sub>w</sub>*):
 
 <p align="center">
-log<sub>10</sub><i>e<sub>w</sub></i> = -7.90298 (T<sub>s</sub>/T -1) + 5.02808 log<sub>10</sub>(T<sub>s</sub>/T) - 1.3816 (10<sup>-7</sup>) (10<sup>(11.344 (1-(T/T<sub>s</sub>)))</sup>-1) + 8.1328 10<sup>-3</sup> (10<sup>(-3.49149*(T<sub>s</sub>/(T)-1))</sup>-1) + log<sub>10</sub>(1013.246)
+log<sub>10</sub><i>e<sub>w</sub></i> = -7.90298 (T<sub>s</sub>/T -1) + 5.02808 log<sub>10</sub>(T<sub>s</sub>/T) 
+- 1.3816 &times; 10<sup>-7</sup> (10<sup>11.344 (1-T/T<sub>s</sub>)</sup>-1) 
++ 8.1328 &times; 10<sup>-3</sup> (10<sup>-3.49149*(T<sub>s</sub>/T-1)</sup>-1) + log<sub>10</sub>(<i>e<sub>w s</sub></i>)
 </p>
 
 *VD* stands for saturation vapor density and *T<sub>c</sub>* for temperature in degrees Celsius. The equation was taken from <a href="http://hyperphysics.phy-astr.gsu.edu/hbase/Kinetic/relhum.html#c3" target="blank">hyperphysics.phy-astr.gsu.edu</a>.
