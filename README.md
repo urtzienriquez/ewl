@@ -129,7 +129,16 @@ To calculate cutaneous resistance to water loss (`Rc`; &Gamma;<sub>c</sub>), we 
 
 * ### Estimating saturation vapor density
 
-In the previous version I was using a fitted polynomial to estimate saturation vapor density. However, Keith Christian pointed out that there is a better way of estimating this parameter with equations from the "*Properties of air*" by C. Richard Tracy and colleagues. I have implemented these functions now, but I still have to add explanations here. I will have them soon! 
+The calculations are based on equations from **List RJ 1971. Smithsonian Meteorological Tables. Smithsonian Institution Press. Washington, DC.** First we need to calculate saturation vapor pressure (*e<sub>w</sub>*):
+
+<p align="center">
+log<sub>10</sub><i>e<sub>w</sub></i> = -7.90298 (T<sub>s</sub>/T -1) + 5.02808 log<sub>10</sub>(T<sub>s</sub>/T) - 1.3816 (10<sup>-7</sup>) (10<sup>(11.344 (1-(T/T<sub>s</sub>)))</sup>-1) + 8.1328 10<sup>-3</sup> (10<sup>(-3.49149*(T<sub>s</sub>/(T)-1))</sup>-1) + log<sub>10</sub>(1013.246)
+</p>
+
+*VD* stands for saturation vapor density and *T<sub>c</sub>* for temperature in degrees Celsius. The equation was taken from <a href="http://hyperphysics.phy-astr.gsu.edu/hbase/Kinetic/relhum.html#c3" target="blank">hyperphysics.phy-astr.gsu.edu</a>.
+
+
+![VD](./images/VD_plot.png)
 
 * ### Estimating surface area
 
