@@ -26,9 +26,12 @@ ewlR <- function(mass, mass_m,
   
   # compute vapor density values from temperature using an equation:
   vapor_dens <- function(Tc){
-    VD <- 5.018 + .32321*Tc + 8.1847 * 10^-3 * Tc^2 + 3.1243 * 10^-4 * Tc^3
-    return(VD)
+    Tc_K <- Tc + 273.2
+    ew <- 10^(-7.90298*(373.16/(Tc_K)-1) + 5.02808*log10(373.16/Tc_K) - 1.3816*(10^-7)*(10^(11.344*(1-(Tc_K/373.16)))-1) + 8.1328*10^-3*(10^(-3.49149*(373.16/(Tc_K)-1))-1)+log10(1013.246))
+    VD <- ew / (10 * (0.000462 * Tc_K))
+    return(round(VD, digits=2))
   }
+  
   
   VDi <- vapor_dens(Ti)
   VDe <- vapor_dens(Te)
