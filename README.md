@@ -78,7 +78,7 @@ Water vapor density (&Omega;) values are determined this way:
 &Omega;<sub>i</sub> = <i>Saturation vapor density at T<sub>i</sub></i> &times; <i>RH<sub>i</sub></i>
 </p>
 
-*RH* is the relative humidity either in the animal (`RHe`) or empty (`RHi`) chamber in decimal fraction. Saturation vapor density can be obtained looking at the Smithsonian Table 108 and finding the value that corresponds to the temperature measured either in the animal (`Te`) or empty (`Ti`) chamber. However, I have implemented an equation that does that automaticly, based on those temperatures (see [ Estimating saturation vapor density ](#estimating-saturation-vapor-density)).
+*RH* is the relative humidity either in the animal (`RHe`) or empty (`RHi`) chamber in decimal fraction. Saturation vapor density can be obtained looking at the Smithsonian Table 108 and finding the value that corresponds to the temperature measured either in the animal (`Te`) or empty (`Ti`) chamber. I have implemented a few equations to find those values, based on those temperatures and equations from Smithsonioan Meteorological tables (see [ Estimating saturation vapor density ](#estimating-saturation-vapor-density)).
 
 
 Evaporative water loss is also expressed as **Mass specific EWL** (`Mass_EWL`). To get this value, we need to divide total EWL by the mass of the animal and multiply by 60 (to convert minutes to hours):
