@@ -137,14 +137,15 @@ log<sub>10</sub><i>e<sub>w</sub></i> = -7.90298 (T<sub>s</sub>/T -1) + 5.02808 l
 + 8.1328 &times; 10<sup>-3</sup> (10<sup>-3.49149*(T<sub>s</sub>/T-1)</sup>-1) + log<sub>10</sub>(<i>e<sub>w s</sub></i>)
 </p>
 
-*e<sub>w</sub>* stands for saturation vapor pressure (in mb.), *T* is temperature (in ºK), *T<sub>s</sub>* represents the steam-point temperature (373.16 ºC), and *<i>e<sub>w s</sub></i>* is the saturation pressure of pure ordinary liquid water at steam-point temperature (1013.264 mb).
+*T* is temperature (in ºK), *T<sub>s</sub>* represents the steam-point temperature (373.16 ºC), and *<i>e<sub>w s</sub></i>* is the saturation pressure of pure ordinary liquid water at steam-point temperature (1013.264 mb).
 
-Subsequently, we calculate saturation vapor density following the next equation:
+Subsequently, we calculate saturation vapor density (*&rho;<sub>w</sub>*) following the next equation:
 
 <p align="center">
 <i>&rho;<sub>w</sub> = e<sub>w</sub> / (C<sub>v</sub> &times; R<sub>w</sub> &times; T)</i>
 </p>
 
+*e<sub>w</sub>* stands for saturation vapor pressure (in mb.), *C<sub>v</sub>* is the "compressibility factor" for water vapor, *R<sub>w</sub>* represents the gas content for water vapor, and *T* the temperature of the vapor (in ºK).
 
 
 * ### Estimating surface area
