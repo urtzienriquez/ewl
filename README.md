@@ -56,7 +56,6 @@ $Rc
 
 ```
 
-
 ## EWL calculations explained
 
 We will determine **evaporative water loss** (`EWL`) following the next equation:
